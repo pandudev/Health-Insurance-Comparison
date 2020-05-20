@@ -1,0 +1,278 @@
+.article {
+  @include breakpoint(desktop) {
+    flex: 1;
+
+    &__content__wrapper {
+      width: 552px;
+    }
+  }
+
+  &__layout {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(desktop) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__detail {
+    display: flex;
+    justify-content: space-between;
+    font-family: $source-sans-pro;
+    margin-bottom: 12px;
+
+    @include breakpoint(desktop) {
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 200px 0 0;
+      margin-right: 24px;
+    }
+
+    &__author {
+      display: flex;
+      align-items: center;
+
+      @include breakpoint(desktop) {
+        align-items: flex-start;
+      }
+
+      .author-avatar {
+        background-color: $grey-2;
+        width: 56px !important;
+        height: 56px !important;
+        border-radius: 50%;
+        margin-right: 1rem;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .author-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+      }
+    }
+
+    &__share {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include breakpoint(desktop) {
+        margin-top: 20px;
+      }
+
+      .share-icon-wrapper {
+        display: flex;
+
+        & > p {
+          display: none;
+          @include breakpoint(tablet) {
+            display: block;
+          }
+        }
+
+        .share-icon {
+          width: 32px;
+          height: 32px;
+          justify-content: center;
+          align-items: center;
+          background-color: $grey-1;
+          border-radius: 50%;
+          display: none;
+          margin-left: 10px;
+
+          @include breakpoint(tablet) {
+            display: flex;
+          }
+        }
+
+        .share-icon-mobile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-decoration: none;
+
+          @include breakpoint(tablet) {
+            display: none;
+          }
+        }
+
+        .icon {
+          height: 18px;
+          width: auto;
+          margin-bottom: 4px;
+
+          @include breakpoint(tablet) {
+            height: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  &__banner {
+    height: 200px;
+    margin: 12px 0 24px 0;
+
+    @include breakpoint(tablet) {
+      height: 340px;
+      // width: 75%;
+      margin: 24px auto 32px auto;
+    }
+
+    @include breakpoint(desktop) {
+      margin-top: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+.float-section {
+  position: relative;
+  margin-bottom: 24px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  font-family: $source-sans-pro;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+
+  &__wrapper {
+    text-align: center;
+    position: relative;
+    width: 90%;
+  }
+}
+
+.property-selection {
+  position: relative;
+  left: -5vw;
+  width: 100vw;
+
+  @include breakpoint(tablet) {
+    position: inherit;
+    width: 450px;
+    margin: 0 auto 30px auto;
+  }
+
+  @include breakpoint(desktop) {
+    width: 80%;
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: column;
+
+    & > a:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.age-selection {
+  @include breakpoint(tablet) {
+    width: 100%;
+    margin: 0 auto 30px auto;
+  }
+
+  @include breakpoint(desktop) {
+    display: none;
+  }
+
+  &.show-desktop {
+    display: none;
+
+    @include breakpoint(desktop) {
+      position: relative;
+      display: block;
+      width: 300px;
+      margin: 0;
+      padding: 10px;
+
+      & > * {
+        width: 100%;
+      }
+    }
+  }
+
+  .line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $grey-2;
+  }
+
+  &__action {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 48px;
+
+    .btn {
+      // flex-basis: 22%;
+      // flex-grow: 0;
+      // flex-shrink: 1;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.area-selection {
+  position: relative;
+  left: -5vw;
+  width: 100vw;
+
+  @include breakpoint(tablet) {
+    position: inherit;
+    width: 100%;
+    margin: 0 auto 30px auto;
+  }
+
+  &__action {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include breakpoint(tablet) {
+      display: none;
+    }
+    .btn {
+      flex-basis: 20%;
+      margin: 5px;
+    }
+  }
+
+  &__map {
+    display: none;
+
+    @include breakpoint(tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn {
+      margin-top: 30px !important;
+    }
+  }
+}

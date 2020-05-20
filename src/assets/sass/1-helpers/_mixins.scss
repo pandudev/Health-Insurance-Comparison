@@ -1,14 +1,14 @@
 @mixin breakpoint($point) {
-  @if $point == large {
-    @media (min-width: $large) {
+  @if $point == HD {
+    @media (min-width: $HD) {
       @content;
     }
-  } @else if $point == medium {
-    @media (min-width: $medium) {
+  } @else if $point == desktop {
+    @media (min-width: $desktop) {
       @content;
     }
-  } @else if $point == small {
-    @media (min-width: $small) {
+  } @else if $point == tablet {
+    @media (min-width: $tablet) {
       @content;
     }
   }

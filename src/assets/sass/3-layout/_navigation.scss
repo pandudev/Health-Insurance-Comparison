@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+
+  &__footer {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      li {
+        margin: 5px 10px;
+
+        a {
+          font-size: 18px;
+          font-family: $helvetica-neue;
+          color: $white !important;
+          text-decoration: none;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}

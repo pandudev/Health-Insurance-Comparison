@@ -1,0 +1,14 @@
+.footer {
+  background-color: $blue-2;
+  color: $white;
+  font-family: $helvetica-neue;
+
+  p {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &__wrapper {
+    padding: 24px 0;
+  }
+}

@@ -1,0 +1,17 @@
+.main {
+  padding: 24px 0;
+
+  .container {
+    width: inherit;
+  }
+
+  @include breakpoint(desktop) {
+    display: flex;
+    align-items: flex-start;
+
+    .container {
+      width: 95% !important;
+      margin: 0 auto 0 0;
+    }
+  }
+}

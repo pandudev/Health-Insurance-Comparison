@@ -1,0 +1,42 @@
+.map {
+  width: 400px;
+  margin-bottom: 30px;
+
+  &-text {
+    font-weight: 700;
+    fill: $white;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+  }
+
+  .path-container {
+    path,
+    polygon {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+
+#WA-path {
+  fill: $map-wa;
+}
+#VIC-path {
+  fill: $map-vic;
+}
+#NT-path {
+  fill: $map-nt;
+}
+#SA-path {
+  fill: $map-sa;
+}
+#NSW-path {
+  fill: $map-nsw;
+}
+#QLD-path {
+  fill: $map-qld;
+}
+#TAS-path {
+  fill: $map-tas;
+}
