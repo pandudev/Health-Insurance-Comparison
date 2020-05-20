@@ -5,6 +5,11 @@
     url("./../fonts/HelveticaNeue.woff2") format("woff2"),
     url("./../fonts/HelveticaNeue.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./../fonts/proxima.woff") format("woff"),
+    url("./../fonts/proxima.woff2") format("woff2");
+}
 // breakpoints
 $tablet: 768px;
 $desktop: 1204px;
@@ -14,6 +19,7 @@ $HD: 1600px;
 $source-serif-pro: "Source Serif Pro", serif;
 $source-sans-pro: "Source Sans Pro", sans-serif;
 $helvetica-neue: "Helvetica Neue", sans-serif;
+$proxima-nova: "Proxima Nova";
 
 // colors
 $black: #25282b;
