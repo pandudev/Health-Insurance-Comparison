@@ -2,15 +2,6 @@
   width: 470px;
   margin-bottom: 30px;
 
-  &-text {
-    font-weight: 700;
-    fill: $white;
-    font-size: 18px;
-    line-height: 22px;
-    cursor: pointer;
-    font-family: $proxima-nova;
-  }
-
   .path-container {
     path,
     polygon {

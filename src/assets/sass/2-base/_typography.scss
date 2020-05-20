@@ -88,3 +88,16 @@ p {
   line-height: 24px;
   font-family: $source-sans-pro;
 }
+
+.map-text {
+  font-weight: 700;
+  fill: $white;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  font-family: $proxima-nova;
+
+  &--small {
+    font-size: 13px !important;
+  }
+}
