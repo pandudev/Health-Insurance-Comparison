@@ -3,6 +3,10 @@
   font-family: "Helvetica Neue";
   src: url("./../fonts/HelveticaNeue.woff") format("woff"), url("./../fonts/HelveticaNeue.woff2") format("woff2"), url("./../fonts/HelveticaNeue.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./../fonts/proxima.woff") format("woff"), url("./../fonts/proxima.woff2") format("woff2"); }
+
 html,
 body,
 div,
@@ -417,11 +421,13 @@ p {
 
 .copyright-text {
   font-size: 15px;
-  line-height: 28px; }
+  line-height: 28px;
+  font-family: "Helvetica Neue", sans-serif; }
 
 .footer-text {
   font-size: 14px;
-  line-height: 24px; }
+  line-height: 24px;
+  font-family: "Source Sans Pro", sans-serif; }
 
 .header {
   background-color: #ffffff;
@@ -493,7 +499,7 @@ p {
 .footer {
   background-color: #19263f;
   color: #ffffff;
-  font-family: "Helvetica Neue", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif; }
   .footer p {
     text-align: center;
     margin-bottom: 24px; }
@@ -566,7 +572,8 @@ p {
     fill: #ffffff;
     font-size: 18px;
     line-height: 22px;
-    cursor: pointer; }
+    cursor: pointer;
+    font-family: "Proxima Nova"; }
   .map .path-container path,
   .map .path-container polygon {
     opacity: 1;
